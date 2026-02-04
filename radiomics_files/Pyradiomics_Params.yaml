@@ -1,0 +1,117 @@
+imageType:
+  Original: {}
+  Wavelet: {}
+  LoG:
+    sigma: [1.0, 2.0, 3.0, 4.0, 5.0]
+
+
+featureClass:
+  firstorder: []     # all first-order features
+  shape: []          # all shape features
+  glcm: []           # all GLCM features
+  glrlm: []          # all GLRLM features
+  glszm: []          # all GLSZM features
+  gldm: []           # all GLDM features
+  ngtdm: []          # all NGTDM features
+  # shape2D: []    # optional
+
+
+setting:
+  # Resampling
+  resampledPixelSpacing: [1, 1, 1]
+  interpolator: 'sitkBSpline'   #linear, sitkBSpline, sitkGaussian, sitkLanczosWindowedSinc
+  # label_interpolator: 'sitkNearestNeighbor'  #nearestNeighbor, linear, sitkBSpline
+  padDistance: 10  # Extra padding for large sigma valued LoG filtered images
+
+  # Intensity discretization
+  binWidth: 25
+
+  # Resegmentation (lung HU range)
+  resegmentRange: [-1000, 200]
+
+  # Mask handling
+  label: 1
+  correctMask: true
+
+
+# imageType:
+#   Original: {}
+#   Wavelet: {}
+#   LoG:
+#     sigma: [1.0, 2.0, 3.0, 4.0, 5.0]
+
+# featureClass:
+#   firstorder: []
+#   shape: []
+#   glcm: []
+#   glrlm: []
+#   glszm: []
+#   gldm: []
+#   ngtdm: []
+
+# setting:
+#   # Resampling
+#   resampledPixelSpacing: [1, 1, 1]
+#   interpolator: 'sitkBSpline'
+#   padDistance: 10
+
+#   # Intensity discretization
+#   binWidth: 25
+
+#   # Resegmentation
+#   resegmentRange: [-1000, 400]
+
+#   # Mask handling
+#   label: 1
+#   correctMask: true
+
+#   # Recommended additions
+#   normalize: true
+#   normalizeScale: 100
+#   voxelArrayShift: 1000
+#   minimumROIDimensions: 2
+#   minimumROISize: 100
+#   removeOutliers: 3
+
+# Simplified Configuration file for PyRadiomics in IPF Research
+
+# IMAGE PROCESSING SETTINGS
+# -------------------------
+setting:
+  # Resampling: CRITICAL for consistent texture features across scanners.
+  # Set to a fixed 1x1x1 mm isotropic voxel spacing.
+  resampledPixelSpacing: [1, 1, 1]
+  interpolator: 'sitkBSpline'
+  
+  # Intensity Discretization: IBSI recommendation for standardization.
+  binWidth: 25
+  
+  # Mask Handling: Ensure accurate calculation within the ROI boundaries.
+  correctMask: true # Ensures mask is resampled accurately to the image grid
+  padDistance: 10   # Good for large sigma values in LoG filter
+  
+  # Define the label to use in the mask file. 
+  # This is a placeholder; set it dynamically in your Python loop (1, 2, 3, or 4).
+  label: 1 
+
+# ENABLED FEATURE CLASSES
+# -----------------------
+# All standard IBSI-compliant classes are included.
+featureClass:
+  firstorder: []
+  shape: []
+  glcm: []
+  glrlm: []
+  glszm: []
+  gldm: []
+  ngtdm: []
+
+# ENABLED IMAGE FILTERS
+# ---------------------
+# Use these filters to enhance micro-architectural features of fibrosis (reticulation/honeycombing).
+imageType:
+  Original: {}
+  Wavelet: {}    # Captures features across multiple scales
+  LoG:         # Laplacian of Gaussian highlights edges and small structures
+    sigma: [1.0, 2.0, 3.0, 4.0, 5.0]
+

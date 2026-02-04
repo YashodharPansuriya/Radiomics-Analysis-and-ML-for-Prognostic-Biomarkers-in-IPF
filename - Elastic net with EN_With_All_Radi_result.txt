@@ -1,0 +1,698 @@
+- Elastic net with EN_With_All_Radiomics_only_without_harmonization with old yaml with seeds 321
+
+One-hot features: []
+Total features: 2632
+
+Training ElasticNetCV (this includes all CV folds)...
+
+Best alpha: 0.047034
+Best l1_ratio: 0.300
+
+Training performance:
+MAE:  0.394
+MSE:  0.255
+RMSE: 0.505
+R²:   0.675
+
+Test performance:
+MAE:  0.422
+MSE:  0.266
+RMSE: 0.516
+R²:   0.586
+
+=== Per-fold CV Metrics (15 folds) ===
+MAE per fold: [0.5283117466632024, 0.503915198302938, 0.5255414261961725, 0.4193359818388871, 0.43007549968576375, 0.487181737287029, 0.5421424308519164, 0.4660573967698962, 0.3990307442753285, 0.5223264749205312, 0.5874025008942171, 0.4767019841183794, 0.43378230635394677, 0.47835255440151625, 0.5113706101835708]
+MSE per fold: [0.4244278388825006, 0.425876284719639, 0.4425419635744112, 0.2788898402862794, 0.32371994508180335, 0.4102424245408564, 0.4549741185590362, 0.35688496675104336, 0.25509052472684013, 0.4103313960374593, 0.5407840200083246, 0.33305811848593636, 0.31558272704441215, 0.37767374706548806, 0.4025305983890078]
+RMSE per fold: [0.6514812651815097, 0.652591974145897, 0.6652382757887667, 0.5281002180327891, 0.5689639224782213, 0.6405016975315962, 0.6745176932883497, 0.5973984991201797, 0.5050648718004848, 0.640571148302403, 0.7353801873917495, 0.5771118769233019, 0.5617675026596075, 0.6145516634632828, 0.6344529914729757]
+R² per fold: [0.5257104791456415, 0.48663111198386877, 0.5100303562139092, 0.5486979406275487, 0.48921680292512393, 0.48607462196273576, 0.505090312266113, 0.40986588160587456, 0.6508063992776769, 0.5000201546907213, 0.3588781958924744, 0.5021933624217346, 0.6291552233149798, 0.4818721775421889, 0.5089296600072744]
+
+=== CV Mean ± Std ===
+MAE:  0.4874 ± 0.0500
+MSE:  0.3835 ± 0.0719
+RMSE: 0.6165 ± 0.0585
+R²:   0.5062 ± 0.0688
+
+Top coefficients:
+                                                Feature  ...  AbsCoefficient
+1325           original_shape_MinorAxisLength_left_lung  ...        0.139884
+9             original_shape_MinorAxisLength_right_lung  ...        0.116318
+97    original_gldm_LargeDependenceLowGrayLevelEmpha...  ...        0.105230
+1590       wavelet-LHL_gldm_DependenceEntropy_left_lung  ...        0.104744
+1691  wavelet-LHH_gldm_LargeDependenceHighGrayLevelE...  ...        0.089288
+1223  log-sigma-5-0-mm-3D_firstorder_10Percentile_ri...  ...        0.086578
+2166               wavelet-LLL_ngtdm_Strength_left_lung  ...        0.082894
+282   wavelet-LHL_gldm_LargeDependenceHighGrayLevelE...  ...        0.079641
+1598  wavelet-LHL_gldm_LargeDependenceHighGrayLevelE...  ...        0.075522
+580              wavelet-HHL_firstorder_Mean_right_lung  ...        0.075012
+1222      log-sigma-4-0-mm-3D_ngtdm_Strength_right_lung  ...        0.065838
+747   wavelet-HHH_gldm_LargeDependenceHighGrayLevelE...  ...        0.058448
+1536            wavelet-LHL_glcm_ClusterShade_left_lung  ...        0.053326
+742      wavelet-HHH_gldm_DependenceVariance_right_lung  ...        0.053230
+2576             log-sigma-5-0-mm-3D_glcm_MCC_left_lung  ...        0.052468
+1311      log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung  ...        0.052149
+301              wavelet-LHH_firstorder_Mean_right_lung  ...        0.052031
+1710              wavelet-HLL_firstorder_Mean_left_lung  ...        0.051985
+1422                  original_ngtdm_Strength_left_lung  ...        0.051700
+1102  log-sigma-3-0-mm-3D_glszm_LowGrayLevelZoneEmph...  ...        0.050787
+
+[20 rows x 3 columns]
+
+Top 5 patients with largest errors:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+501          3.56        3.66  ...                0.0               50.0
+368          1.56        1.13  ...                0.0               49.0
+81           3.59        3.88  ...                0.0               52.0
+470          4.04        4.14  ...                0.0               53.0
+152          3.63        2.51  ...                0.0               53.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+180          2.43       2.560  ...                0.0               52.0
+521          2.43       2.560  ...                0.0               52.0
+123          2.23       3.780  ...                0.0               51.0
+273          2.51       2.771  ...                0.0               49.0
+107          2.81       2.880  ...                0.0               54.0
+
+[5 rows x 6 columns]
+
+
+----------------------------------------------------------------------------------------------------------
+One-hot features: []
+number of features given as input: 2632
+MAE: [0.5400261925683286, 0.5105450922564488, 0.529878480453532, 0.4191118477843279, 0.4449042638313648, 0.49971622724354564, 0.5626848345116946, 0.46573039680422496, 0.40414626693805256, 0.5449233049238662, 0.5987058921943774, 0.4760541910408411, 0.451943189934477, 0.47955138701959665, 0.5156053055200532]
+MSE: [0.4427128191129597, 0.4351963604908234, 0.45033798957553145, 0.2803001591217311, 0.3326039813964379, 0.42878368154726043, 0.48390064313555115, 0.3566565104507446, 0.25919960285665006, 0.4518020814934257, 0.5513521129807759, 0.3303315088690152, 0.3511609409676077, 0.39143060532019336, 0.4029190859558722]
+RMSE: [0.6653666801944321, 0.6596941416223304, 0.6710722685192195, 0.5294338099533605, 0.5767182859910356, 0.6548157615293484, 0.6956296738463298, 0.5972072592080111, 0.5091164924225595, 0.6721622434304279, 0.7425308835198546, 0.5747447336592265, 0.5925883402224581, 0.6256441523103955, 0.6347590770960839]
+R2: [0.5052773837691227, 0.4753963071671864, 0.5013988220383401, 0.5464157499455298, 0.47519908007344214, 0.46284732525648464, 0.4736247482671534, 0.41024364999044893, 0.6451814793033495, 0.4494890300939307, 0.34634928493765405, 0.5062687002983743, 0.5873468679567269, 0.4629992453705617, 0.5084557215730123]
+    RepeatFold       MAE       MSE      RMSE        R2
+0            1  0.540026  0.442713  0.665367  0.505277
+1            2  0.510545  0.435196  0.659694  0.475396
+2            3  0.529878  0.450338  0.671072  0.501399
+3            4  0.419112  0.280300  0.529434  0.546416
+4            5  0.444904  0.332604  0.576718  0.475199
+5            6  0.499716  0.428784  0.654816  0.462847
+6            7  0.562685  0.483901  0.695630  0.473625
+7            8  0.465730  0.356657  0.597207  0.410244
+8            9  0.404146  0.259200  0.509116  0.645181
+9           10  0.544923  0.451802  0.672162  0.449489
+10          11  0.598706  0.551352  0.742531  0.346349
+11          12  0.476054  0.330332  0.574745  0.506269
+12          13  0.451943  0.351161  0.592588  0.587347
+13          14  0.479551  0.391431  0.625644  0.462999
+14          15  0.515605  0.402919  0.634759  0.508456
+
+Repeated 5-Fold CV Results (15 runs):
+       RepeatFold        MAE        MSE       RMSE         R2
+count   15.000000  15.000000  15.000000  15.000000  15.000000
+mean     8.000000   0.496235   0.396579   0.626766   0.490433
+std      4.472136   0.054491   0.078729   0.063337   0.069954
+min      1.000000   0.404146   0.259200   0.509116   0.346349
+25%      4.500000   0.458837   0.341882   0.584653   0.462923
+50%      8.000000   0.499716   0.402919   0.634759   0.475396
+75%     11.500000   0.534952   0.446525   0.668219   0.507362
+max     15.000000   0.598706   0.551352   0.742531   0.645181
+
+Best alpha chosen by ElasticNetCV: 0.032903
+Best l1_ratio chosen by ElasticNetCV: 0.50
+
+Computing MSE vs l1_ratio...
+
+
+- Elastic net with EN_With_All_Clinical_Radiomics_without_harmonization with old yaml with seeds 321
+
+with l1: 0.1 to 1 1model
+One-hot features: ['Primary Diagnosis_CHP', 'Primary Diagnosis_CTD-ILD', 'Primary Diagnosis_Emphysema', 'Primary Diagnosis_Exposure-related', 'Primary Diagnosis_Fibrotic HP (FHP)', 'Primary Diagnosis_INSIP', 'Primary Diagnosis_IPF', 'Primary Diagnosis_Idiopathic OP', 'Primary Diagnosis_Idiopathic pleuroparenchymal fibroelastosis (IPPFE)', 'Primary Diagnosis_Miscellaneous', 'Primary Diagnosis_NSIP', 'Primary Diagnosis_No information', 'Primary Diagnosis_Occupational-related ILD', 'Primary Diagnosis_Sarcoidosis', 'Primary Diagnosis_Smoking Related ILD (DIP / RB / RB-ILD)', 'Primary Diagnosis_UILD', 'Sex_Female', 'Sex_Male', 'Smoking History_Active Smoker', 'Smoking History_Ex Smoker', 'Smoking History_Never Smoker', 'Smoking History_No Knowledge']
+Total features: 2657
+
+Training ElasticNetCV (this includes all CV folds)...
+
+Best alpha: 0.032903
+Best l1_ratio: 0.800
+
+Training performance:
+MAE:  0.243
+MSE:  0.124
+RMSE: 0.352
+R²:   0.842
+
+Test performance:
+MAE:  0.240
+MSE:  0.103
+RMSE: 0.321
+R²:   0.840
+
+=== Per-fold CV Metrics (15 folds) ===
+MAE per fold: [0.2641127481266238, 0.24006597610081226, 0.28437369010981733, 0.24534482193589324, 0.2711010703051684, 0.235164555855397, 0.2983886909118401, 0.24627774549474143, 0.2108042805748151, 0.30486968992938107, 0.3413924676239242, 0.22260766089389666, 0.24017427008393455, 0.2724748837599499, 0.23351286648591937]
+MSE per fold: [0.13437647445330558, 0.11836775661529123, 0.19689474027539386, 0.11984340085124333, 0.14686050535130307, 0.09112532792660337, 0.1863822874809005, 0.13915913293113522, 0.0961886076972487, 0.20526068444190912, 0.2364378397706097, 0.09422056919975884, 0.13169074817668713, 0.14317825093827785, 0.11287359548641018]
+RMSE per fold: [0.3665739685974791, 0.34404615477475, 0.44372822794520733, 0.34618405632155175, 0.38322383191981035, 0.3018697201221139, 0.43172014949606013, 0.37304039048223075, 0.31014288271254703, 0.453057043253837, 0.4862487426930888, 0.30695369227256225, 0.3628921991124735, 0.3783890206365373, 0.33596665829574546]
+R² per fold: [0.8498370091595233, 0.8573146104377248, 0.7820038466479389, 0.8060683259352666, 0.7682753886900151, 0.8858440380566118, 0.7972579187835035, 0.7698906934174854, 0.8683273465126276, 0.7498943384630172, 0.7196931699448406, 0.8591728526022321, 0.845248735390407, 0.8035748156752223, 0.862298977683813]
+
+=== CV Mean ± Std ===
+MAE:  0.2607 ± 0.0340
+MSE:  0.1435 ± 0.0424
+RMSE: 0.3749 ± 0.0543
+R²:   0.8150 ± 0.0484
+
+Top coefficients:
+                                                Feature  ...  AbsCoefficient
+2632                              Baseline FVC Volume L  ...        0.648916
+2633                                      FEV1 Volume L  ...        0.057841
+1311      log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung  ...        0.041486
+1325           original_shape_MinorAxisLength_left_lung  ...        0.039299
+1564  wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_...  ...        0.036615
+1803              wavelet-HLH_firstorder_Mean_left_lung  ...        0.031332
+2103                    wavelet-LLL_glcm_Idmn_left_lung  ...        0.030423
+1883               wavelet-HLH_ngtdm_Busyness_left_lung  ...        0.025970
+1150   log-sigma-4-0-mm-3D_glcm_ClusterShade_right_lung  ...        0.022784
+2634                                                Age  ...       -0.019087
+2181  log-sigma-1-0-mm-3D_firstorder_Skewness_left_lung  ...       -0.012099
+561   wavelet-HLH_gldm_LargeDependenceHighGrayLevelE...  ...        0.009389
+1785  wavelet-HLL_gldm_LargeDependenceLowGrayLevelEm...  ...        0.008235
+1976               wavelet-HHL_ngtdm_Busyness_left_lung  ...        0.006031
+1590       wavelet-LHL_gldm_DependenceEntropy_left_lung  ...       -0.005539
+2631       log-sigma-5-0-mm-3D_ngtdm_Strength_left_lung  ...       -0.002580
+1809          wavelet-HLH_firstorder_Skewness_left_lung  ...        0.000927
+2390             log-sigma-3-0-mm-3D_glcm_MCC_left_lung  ...        0.000729
+1767  wavelet-HLL_glszm_LowGrayLevelZoneEmphasis_lef...  ...        0.000000
+1766  wavelet-HLL_glszm_LargeAreaLowGrayLevelEmphasi...  ...        0.000000
+
+[20 rows x 3 columns]
+
+Selected features (non-zero): ['Baseline FVC Volume L', 'FEV1 Volume L', 'log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung', 'original_shape_MinorAxisLength_left_lung', 'wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_left_lung', 'wavelet-HLH_firstorder_Mean_left_lung', 'wavelet-LLL_glcm_Idmn_left_lung', 'wavelet-HLH_ngtdm_Busyness_left_lung', 'log-sigma-4-0-mm-3D_glcm_ClusterShade_right_lung', 'Age', 'log-sigma-1-0-mm-3D_firstorder_Skewness_left_lung', 'wavelet-HLH_gldm_LargeDependenceHighGrayLevelEmphasis_right_lung', 'wavelet-HLL_gldm_LargeDependenceLowGrayLevelEmphasis_left_lung', 'wavelet-HHL_ngtdm_Busyness_left_lung', 'wavelet-LHL_gldm_DependenceEntropy_left_lung', 'log-sigma-5-0-mm-3D_ngtdm_Strength_left_lung', 'wavelet-HLH_firstorder_Skewness_left_lung', 'log-sigma-3-0-mm-3D_glcm_MCC_left_lung']
+
+Selected features (non-zero): 18
+
+Top 5 patients with largest errors:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+123          2.23        3.78  ...                0.0               51.0
+152          3.63        2.51  ...                0.0               53.0
+326          2.37        1.73  ...                0.0               56.0
+233          1.98        1.22  ...                0.0               54.0
+368          1.56        1.13  ...                0.0               49.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+535          1.43        1.48  ...                0.0               55.0
+107          2.81        2.88  ...                0.0               54.0
+162          1.84        1.92  ...                0.0               48.0
+99           1.81        1.92  ...                0.0               48.0
+514          2.65        2.66  ...                0.0               52.0
+
+[5 rows x 6 columns]
+
+
+with l1 0.9 to 1
+
+--------------------------------------------------------------------------------------------------------------------------
+
+number of features given as input: 2657
+MAE: [0.26927837283232064, 0.24021853571645144, 0.2893261676797561, 0.24171446243477598, 0.2693852492425544, 0.23641278101467347, 0.3028581818348481, 0.252528240791464, 0.21084262567659418, 0.3062046511811082, 0.34557813676619326, 0.23291083992293685, 0.23790396062195332, 0.26896987056803784, 0.23846608480351314]
+MSE: [0.13859039728530054, 0.11886914881465005, 0.2030621493350705, 0.11890424508565024, 0.14532255251960824, 0.0933264273825396, 0.1884249515647395, 0.14317797953232092, 0.09804800799011955, 0.21235455209732096, 0.24061711992522933, 0.10375089542758054, 0.13090207217277702, 0.14297237080159417, 0.1159916085383992]
+RMSE: [0.3722773123429637, 0.3447740547295432, 0.4506241774861514, 0.3448249484675525, 0.3812119522255411, 0.3054937436062146, 0.4340794300179859, 0.3783886620028683, 0.3131261854111207, 0.4608194354596179, 0.4905273895770035, 0.3221038581383038, 0.3618039139821141, 0.37811687452637466, 0.34057540800592045]
+R2: [0.8451280356714355, 0.8567102115428339, 0.7751754699768421, 0.807588076280595, 0.7707020555551813, 0.8830866419358774, 0.7950359588903128, 0.7632452510007237, 0.8657820121292865, 0.7412506156398349, 0.714738460609015, 0.8449283127121281, 0.8461755173448127, 0.8038572611132123, 0.8584951333657166]
+    RepeatFold       MAE       MSE      RMSE        R2
+0            1  0.269278  0.138590  0.372277  0.845128
+1            2  0.240219  0.118869  0.344774  0.856710
+2            3  0.289326  0.203062  0.450624  0.775175
+3            4  0.241714  0.118904  0.344825  0.807588
+4            5  0.269385  0.145323  0.381212  0.770702
+5            6  0.236413  0.093326  0.305494  0.883087
+6            7  0.302858  0.188425  0.434079  0.795036
+7            8  0.252528  0.143178  0.378389  0.763245
+8            9  0.210843  0.098048  0.313126  0.865782
+9           10  0.306205  0.212355  0.460819  0.741251
+10          11  0.345578  0.240617  0.490527  0.714738
+11          12  0.232911  0.103751  0.322104  0.844928
+12          13  0.237904  0.130902  0.361804  0.846176
+13          14  0.268970  0.142972  0.378117  0.803857
+14          15  0.238466  0.115992  0.340575  0.858495
+
+Repeated 5-Fold CV Results (15 runs):
+       RepeatFold        MAE        MSE       RMSE         R2
+count   15.000000  15.000000  15.000000  15.000000  15.000000
+mean     8.000000   0.262840   0.146288   0.378583   0.811460
+std      4.472136   0.035586   0.044674   0.056339   0.050518
+min      1.000000   0.210843   0.093326   0.305494   0.714738
+25%      4.500000   0.238185   0.117430   0.342675   0.772939
+50%      8.000000   0.252528   0.138590   0.372277   0.807588
+75%     11.500000   0.279356   0.166874   0.407646   0.851443
+max     15.000000   0.345578   0.240617   0.490527   0.883087
+
+Best alpha chosen by ElasticNetCV: 0.023018
+Best l1_ratio chosen by ElasticNetCV: 1.00
+
+Computing MSE vs l1_ratio...
+
+Test set performance:
+- MAE:  0.24 L
+- MSE:  0.10 L²
+- RMSE: 0.32 L
+- R²:   0.842
+
+Training set performance:
+- MAE:  0.24 L
+- MSE:  0.12 L²
+- RMSE: 0.35 L
+- R²:   0.845
+
+Model coefficients (sorted by |coef|):
+                                                Feature  Coefficient
+2632                              Baseline FVC Volume L     0.684536
+1325           original_shape_MinorAxisLength_left_lung     0.041105
+1564  wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_...     0.039089
+1311      log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung     0.036002
+1803              wavelet-HLH_firstorder_Mean_left_lung     0.033963
+...                                                 ...          ...
+888             log-sigma-1-0-mm-3D_glcm_MCC_right_lung     0.000000
+889   log-sigma-1-0-mm-3D_glcm_MaximumProbability_ri...     0.000000
+890      log-sigma-1-0-mm-3D_glcm_SumAverage_right_lung     0.000000
+891      log-sigma-1-0-mm-3D_glcm_SumEntropy_right_lung    -0.000000
+881             log-sigma-1-0-mm-3D_glcm_Idn_right_lung     0.000000
+
+[2657 rows x 2 columns]
+
+Selected features (non-zero): ['Baseline FVC Volume L', 'original_shape_MinorAxisLength_left_lung', 'wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_left_lung', 'log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung', 'wavelet-HLH_firstorder_Mean_left_lung', 'FEV1 Volume L', 'wavelet-HLH_ngtdm_Busyness_left_lung', 'wavelet-LLL_glcm_Idmn_left_lung', 'log-sigma-4-0-mm-3D_glcm_ClusterShade_right_lung', 'Age', 'log-sigma-1-0-mm-3D_firstorder_Skewness_left_lung', 'wavelet-HLH_gldm_LargeDependenceHighGrayLevelEmphasis_right_lung', 'wavelet-HLL_gldm_LargeDependenceLowGrayLevelEmphasis_left_lung', 'wavelet-HHL_ngtdm_Busyness_left_lung', 'wavelet-LLL_gldm_SmallDependenceLowGrayLevelEmphasis_left_lung', 'wavelet-LHL_gldm_DependenceEntropy_left_lung', 'log-sigma-5-0-mm-3D_ngtdm_Strength_left_lung', 'log-sigma-5-0-mm-3D_ngtdm_Strength_right_lung', 'wavelet-HLH_firstorder_Skewness_left_lung', 'log-sigma-3-0-mm-3D_glcm_MCC_left_lung', 'log-sigma-5-0-mm-3D_glszm_GrayLevelVariance_left_lung', 'wavelet-LHH_firstorder_Mean_right_lung']
+
+Selected features (non-zero): 22
+
+Top 5 patients with largest errors:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+123          2.23        3.78  ...                0.0               51.0
+152          3.63        2.51  ...                0.0               53.0
+326          2.37        1.73  ...                0.0               56.0
+233          1.98        1.22  ...                0.0               54.0
+368          1.56        1.13  ...                0.0               49.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+162          1.84        1.92  ...                0.0               48.0
+535          1.43        1.48  ...                0.0               55.0
+107          2.81        2.88  ...                0.0               54.0
+99           1.81        1.92  ...                0.0               48.0
+514          2.65        2.66  ...                0.0               52.0
+
+[5 rows x 6 columns]
+
+-----------------------------------------------------------------------------------------
+with harmonization with H model 
+
+One-hot features: ['Sex_Male', 'Primary Diagnosis_CTD-ILD', 'Primary Diagnosis_Exposure-related', 'Primary Diagnosis_Fibrotic HP (FHP)', 'Primary Diagnosis_INSIP', 'Primary Diagnosis_IPF', 'Primary Diagnosis_Idiopathic OP', 'Primary Diagnosis_Miscellaneous', 'Primary Diagnosis_No information', 'Primary Diagnosis_Occupational-related ILD', 'Primary Diagnosis_Sarcoidosis', 'Primary Diagnosis_Smoking Related ILD (DIP / RB / RB-ILD)', 'Primary Diagnosis_UILD', 'Smoking History_Ex Smoker', 'Smoking History_Never Smoker', 'Smoking History_No Knowledge']
+Total features: 2651
+
+Training ElasticNetCV (this includes all CV folds)...
+
+Best alpha: 0.032903
+Best l1_ratio: 1.000
+
+Training performance:
+MAE:  0.236
+MSE:  0.122
+RMSE: 0.349
+R²:   0.843
+
+Test performance:
+MAE:  0.264
+MSE:  0.131
+RMSE: 0.362
+R²:   0.818
+
+=== Per-fold CV Metrics (15 folds) ===
+MAE per fold: [0.27593470931762176, 0.23673034083116626, 0.22670217192955658, 0.27043276051753246, 0.24036887092415302, 0.26160492289611537, 0.22031893918568732, 0.21436526566714056, 0.23465864310646023, 0.317713052704649, 0.2511908376824286, 0.2471770521784059, 0.23856205044623144, 0.2350655646761911, 0.28437114125112334]
+MSE per fold: [0.17976290582868765, 0.1443006250627305, 0.11636898057699983, 0.1384603948679023, 0.10072669470827776, 0.1421602477519961, 0.08994980064929878, 0.09533220232697621, 0.11687892625373815, 0.2343111885239858, 0.14438441751544426, 0.14305475134864717, 0.10902769530793462, 0.12069625167436294, 0.17955279294077633]
+RMSE per fold: [0.42398455847906497, 0.379869220999452, 0.3411289793860965, 0.3721026671066767, 0.31737469134806223, 0.3770414403643134, 0.29991632274569313, 0.30875913318795317, 0.34187560055338573, 0.48405700958046854, 0.37997949617768095, 0.3782257941344656, 0.33019342105489413, 0.3474136607480525, 0.42373670237634165]
+R² per fold: [0.7903701489334395, 0.8040650720524866, 0.8003486979812289, 0.8568633732144817, 0.8450386641366028, 0.7867729852919735, 0.8980281462203825, 0.8804216878292079, 0.8530154778871886, 0.6589277806798697, 0.7757671134744663, 0.7990365489684546, 0.862285891273696, 0.8458056351856923, 0.7903304568104524]
+
+=== CV Mean ± Std ===
+MAE:  0.2503 ± 0.0265
+MSE:  0.1370 ± 0.0369
+RMSE: 0.3670 ± 0.0477
+R²:   0.8165 ± 0.0559
+
+Top coefficients:
+                                                Feature  ...  AbsCoefficient
+2632                              Baseline FVC Volume L  ...        0.694231
+1311      log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung  ...        0.060863
+2634                                                Age  ...        0.042879
+1590       wavelet-LHL_gldm_DependenceEntropy_left_lung  ...        0.023535
+1031  log-sigma-2-0-mm-3D_gldm_SmallDependenceLowGra...  ...        0.019713
+1995          wavelet-HHH_firstorder_Skewness_left_lung  ...        0.018249
+1325           original_shape_MinorAxisLength_left_lung  ...        0.017822
+2254  log-sigma-1-0-mm-3D_gldm_SmallDependenceLowGra...  ...        0.011928
+62    original_glrlm_LongRunLowGrayLevelEmphasis_rig...  ...        0.007925
+1580  wavelet-LHL_glszm_LargeAreaLowGrayLevelEmphasi...  ...        0.004878
+2307  log-sigma-2-0-mm-3D_glrlm_LongRunHighGrayLevel...  ...        0.003674
+2103                    wavelet-LLL_glcm_Idmn_left_lung  ...        0.001415
+1883               wavelet-HLH_ngtdm_Busyness_left_lung  ...        0.000496
+1762      wavelet-HLL_glszm_GrayLevelVariance_left_lung  ...        0.000000
+1763  wavelet-HLL_glszm_HighGrayLevelZoneEmphasis_le...  ...        0.000000
+1764      wavelet-HLL_glszm_LargeAreaEmphasis_left_lung  ...        0.000000
+1774         wavelet-HLL_glszm_ZonePercentage_left_lung  ...        0.000000
+1765  wavelet-HLL_glszm_LargeAreaHighGrayLevelEmphas...  ...        0.000000
+1766  wavelet-HLL_glszm_LargeAreaLowGrayLevelEmphasi...  ...        0.000000
+1767  wavelet-HLL_glszm_LowGrayLevelZoneEmphasis_lef...  ...        0.000000
+
+[20 rows x 3 columns]
+
+Selected features (non-zero): ['Baseline FVC Volume L', 'log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung', 'Age', 'wavelet-LHL_gldm_DependenceEntropy_left_lung', 'log-sigma-2-0-mm-3D_gldm_SmallDependenceLowGrayLevelEmphasis_right_lung', 'wavelet-HHH_firstorder_Skewness_left_lung', 'original_shape_MinorAxisLength_left_lung', 'log-sigma-1-0-mm-3D_gldm_SmallDependenceLowGrayLevelEmphasis_left_lung', 'original_glrlm_LongRunLowGrayLevelEmphasis_right_lung', 'wavelet-LHL_glszm_LargeAreaLowGrayLevelEmphasis_left_lung', 'log-sigma-2-0-mm-3D_glrlm_LongRunHighGrayLevelEmphasis_left_lung', 'wavelet-LLL_glcm_Idmn_left_lung', 'wavelet-HLH_ngtdm_Busyness_left_lung']
+
+Selected features (non-zero): 13
+
+Top 5 patients with largest errors:
+         Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+587799           2.36        3.86  ...                0.0               56.0
+1001085          2.50        3.94  ...                0.0               48.0
+1001201          2.97        2.03  ...                0.0               54.0
+151493           1.16        2.06  ...                0.0               50.0
+666514           1.80        1.26  ...                0.0               53.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+         Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+1000550          2.65        2.66  ...                0.0               52.0
+1000960          1.34        1.35  ...                0.0               48.0
+1001176          1.32        1.41  ...                0.0               52.0
+1001354          1.82        1.94  ...                0.0               52.0
+1000634          2.55        2.60  ...                0.0               52.0
+
+[5 rows x 6 columns]
+
+
+
+- Elastic net with EN_With_All_Radiomics_only_without_harmonization with old yaml
+
+One-hot features: []
+number of features given as input: 2643
+
+Repeated 5-Fold CV Results (15 runs):
+       RepeatFold        MAE        MSE       RMSE         R2
+count   15.000000  15.000000  15.000000  15.000000  15.000000
+mean     8.000000   0.453533   0.330059   0.572755   0.549240
+std      4.472136   0.040532   0.054307   0.046409   0.072043
+min      1.000000   0.387687   0.252370   0.502364   0.362518
+25%      4.500000   0.424742   0.297802   0.545712   0.527350
+50%      8.000000   0.448042   0.326018   0.570980   0.568419
+75%     11.500000   0.472927   0.349922   0.591528   0.590554
+max     15.000000   0.532377   0.437299   0.661286   0.653852
+
+Best alpha chosen by ElasticNetCV: 0.023018
+Best l1_ratio chosen by ElasticNetCV: 0.70
+
+Computing MSE vs l1_ratio...
+
+Test set performance:
+- MAE:  0.54 L
+- MSE:  0.47 L²
+- RMSE: 0.69 L
+- R²:   0.452
+
+Training set performance:
+- MAE:  0.37 L
+- MSE:  0.23 L²
+- RMSE: 0.48 L
+- R²:   0.693
+
+Model coefficients (sorted by |coef|):
+                                                Feature  Coefficient
+1325           original_shape_MinorAxisLength_left_lung     0.268623
+97    original_gldm_LargeDependenceLowGrayLevelEmpha...     0.125253
+1422                  original_ngtdm_Strength_left_lung    -0.094213
+1590       wavelet-LHL_gldm_DependenceEntropy_left_lung    -0.086011
+2598  log-sigma-5-0-mm-3D_glszm_GrayLevelNonUniformi...    -0.085115
+...                                                 ...          ...
+892      log-sigma-1-0-mm-3D_glcm_SumSquares_right_lung    -0.000000
+893   log-sigma-1-0-mm-3D_glrlm_GrayLevelNonUniformi...     0.000000
+894   log-sigma-1-0-mm-3D_glrlm_GrayLevelNonUniformi...     0.000000
+895   log-sigma-1-0-mm-3D_glrlm_GrayLevelVariance_ri...    -0.000000
+885    log-sigma-1-0-mm-3D_glcm_JointAverage_right_lung    -0.000000
+
+[2643 rows x 2 columns]
+
+Selected features (non-zero): ['original_shape_MinorAxisLength_left_lung', 'original_gldm_LargeDependenceLowGrayLevelEmphasis_right_lung', 'original_ngtdm_Strength_left_lung', 'wavelet-LHL_gldm_DependenceEntropy_left_lung', 'log-sigma-5-0-mm-3D_glszm_GrayLevelNonUniformityNormalized_left_lung', 'log-sigma-3-0-mm-3D_glszm_LowGrayLevelZoneEmphasis_right_lung', 'wavelet-HHH_firstorder_Mean_right_lung', 'wavelet-LLL_glcm_ClusterShade_right_lung', 'wavelet-LHL_glcm_Idmn_right_lung', 'log-sigma-4-0-mm-3D_glcm_DifferenceVariance_left_lung', 'wavelet-LHL_gldm_LargeDependenceHighGrayLevelEmphasis_left_lung', 'wavelet-LHL_gldm_LargeDependenceHighGrayLevelEmphasis_right_lung', 'log-sigma-5-0-mm-3D_firstorder_10Percentile_right_lung', 'wavelet-LHH_gldm_LargeDependenceHighGrayLevelEmphasis_left_lung', 'wavelet-HHL_firstorder_Mean_right_lung', 'log-sigma-2-0-mm-3D_glszm_SmallAreaLowGrayLevelEmphasis_right_lung', 'wavelet-LLL_gldm_SmallDependenceLowGrayLevelEmphasis_left_lung', 'log-sigma-5-0-mm-3D_firstorder_Energy_left_lung', 'log-sigma-5-0-mm-3D_firstorder_TotalEnergy_left_lung', 'wavelet-LHL_glcm_MCC_left_lung', 'wavelet-LHL_firstorder_Mean_left_lung', 'log-sigma-4-0-mm-3D_ngtdm_Strength_right_lung', 'wavelet-LHH_firstorder_Skewness_right_lung', 'wavelet-LHH_glcm_MCC_right_lung', 'wavelet-LHH_firstorder_Skewness_left_lung', 'original_shape_MinorAxisLength_right_lung', 'wavelet-HHH_gldm_SmallDependenceLowGrayLevelEmphasis_left_lung', 'original_glcm_ClusterShade_right_lung', 'wavelet-LHH_glszm_LargeAreaLowGrayLevelEmphasis_left_lung', 'log-sigma-2-0-mm-3D_glrlm_HighGrayLevelRunEmphasis_right_lung', 'wavelet-LHL_ngtdm_Contrast_left_lung', 'log-sigma-2-0-mm-3D_glszm_LowGrayLevelZoneEmphasis_right_lung', 'wavelet-HHL_glcm_Idmn_right_lung', 'wavelet-HLL_glcm_Idn_left_lung', 'log-sigma-2-0-mm-3D_glcm_Autocorrelation_right_lung', 'wavelet-LLL_glszm_LargeAreaLowGrayLevelEmphasis_left_lung', 'log-sigma-2-0-mm-3D_gldm_HighGrayLevelEmphasis_right_lung', 'wavelet-HHH_gldm_LargeDependenceHighGrayLevelEmphasis_right_lung', 'wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_right_lung', 'log-sigma-5-0-mm-3D_firstorder_Kurtosis_left_lung', 'original_firstorder_Range_left_lung', 'wavelet-LHL_gldm_DependenceEntropy_right_lung', 'log-sigma-2-0-mm-3D_gldm_SmallDependenceLowGrayLevelEmphasis_right_lung', 'original_firstorder_Maximum_left_lung', 'log-sigma-2-0-mm-3D_glszm_SmallAreaLowGrayLevelEmphasis_left_lung', 'wavelet-LLL_glszm_LargeAreaHighGrayLevelEmphasis_left_lung', 'wavelet-LHH_firstorder_Mean_right_lung', 'log-sigma-5-0-mm-3D_glcm_ClusterShade_right_lung', 'log-sigma-5-0-mm-3D_glszm_SmallAreaHighGrayLevelEmphasis_right_lung', 'log-sigma-4-0-mm-3D_glcm_Imc1_right_lung', 'log-sigma-3-0-mm-3D_glszm_SmallAreaLowGrayLevelEmphasis_left_lung', 'log-sigma-3-0-mm-3D_glcm_Correlation_right_lung', 'wavelet-LLL_gldm_LargeDependenceHighGrayLevelEmphasis_left_lung', 'wavelet-HHH_gldm_SmallDependenceLowGrayLevelEmphasis_right_lung', 'log-sigma-5-0-mm-3D_gldm_LargeDependenceLowGrayLevelEmphasis_right_lung', 'wavelet-HHL_glrlm_GrayLevelNonUniformity_left_lung', 'log-sigma-2-0-mm-3D_glcm_SumAverage_right_lung', 'wavelet-LLL_firstorder_Minimum_right_lung', 'log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung', 'log-sigma-2-0-mm-3D_firstorder_Skewness_left_lung', 'wavelet-LLL_glszm_LargeAreaHighGrayLevelEmphasis_right_lung', 'wavelet-LLL_ngtdm_Strength_left_lung', 'log-sigma-2-0-mm-3D_glcm_JointAverage_right_lung', 'log-sigma-5-0-mm-3D_gldm_LowGrayLevelEmphasis_left_lung', 'wavelet-LHL_glcm_ClusterShade_left_lung', 'log-sigma-4-0-mm-3D_glszm_LargeAreaHighGrayLevelEmphasis_left_lung', 'wavelet-LLH_glcm_Autocorrelation_left_lung', 'log-sigma-1-0-mm-3D_firstorder_Skewness_right_lung', 'wavelet-HHH_glcm_ClusterShade_right_lung', 'wavelet-LHL_glszm_LargeAreaLowGrayLevelEmphasis_left_lung', 'wavelet-HLH_firstorder_Mean_left_lung', 'log-sigma-4-0-mm-3D_glcm_DifferenceVariance_right_lung', 'wavelet-LHL_glrlm_LongRunHighGrayLevelEmphasis_left_lung', 'wavelet-HHH_firstorder_Mean_left_lung', 'wavelet-HHL_glszm_LargeAreaLowGrayLevelEmphasis_right_lung', 'log-sigma-3-0-mm-3D_glcm_MCC_left_lung', 'wavelet-LHL_glcm_Idmn_left_lung', 'wavelet-HHL_gldm_SmallDependenceLowGrayLevelEmphasis_left_lung', 'wavelet-LLL_gldm_SmallDependenceLowGrayLevelEmphasis_right_lung', 'wavelet-HHH_glrlm_LongRunHighGrayLevelEmphasis_right_lung', 'wavelet-LHH_glcm_ClusterShade_left_lung', 'log-sigma-5-0-mm-3D_glcm_ClusterShade_left_lung']
+
+Selected features (non-zero): 82
+
+Top 5 patients with largest errors:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+346          4.05        4.25  ...                0.0               54.0
+268          4.76        4.62  ...                0.0               53.0
+210          4.29        4.21  ...                0.0               52.0
+176          3.33        3.50  ...                0.0               48.0
+55           3.83        3.79  ...                0.0               51.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+525          2.34        2.43  ...                0.0               51.0
+440          1.98        2.06  ...                0.0               53.0
+369          1.93        1.97  ...                0.0               55.0
+149          1.73        1.95  ...                0.0               54.0
+511          1.43        1.49  ...                0.0               54.0
+
+[5 rows x 6 columns]
+
+
+
+- Elastic net with EN_With_All_Clinical_Radiomics_without_harmonization with old yaml
+
+One-hot features: ['Primary Diagnosis_CHP', 'Primary Diagnosis_CTD-ILD', 'Primary Diagnosis_Emphysema', 'Primary Diagnosis_Exposure-related', 'Primary Diagnosis_Fibrotic HP (FHP)', 'Primary Diagnosis_INSIP', 'Primary Diagnosis_IPF', 'Primary Diagnosis_Idiopathic OP', 'Primary Diagnosis_Idiopathic pleuroparenchymal fibroelastosis (IPPFE)', 'Primary Diagnosis_Miscellaneous', 'Primary Diagnosis_NSIP', 'Primary Diagnosis_No information', 'Primary Diagnosis_Occupational-related ILD', 'Primary Diagnosis_Sarcoidosis', 'Primary Diagnosis_Smoking Related ILD (DIP / RB / RB-ILD)', 'Primary Diagnosis_UILD', 'Sex_Female', 'Sex_Male', 'Smoking History_Active Smoker', 'Smoking History_Ex Smoker', 'Smoking History_Never Smoker', 'Smoking History_No Knowledge']
+number of features given as input: 2657
+MAE: [0.2785481889917756, 0.27366294029308985, 0.25417256225955703, 0.28394610764917066, 0.21475639264607552, 0.19224694557531774, 0.27216468290514206, 0.2964094696318205, 0.28069117328350207, 0.2598904823784894, 0.2652057822644401, 0.283208317048565, 0.31105482180619837, 0.21449851261062725, 0.24879066045826007]
+MSE: [0.16992197797272302, 0.1675709684680295, 0.1271526040098948, 0.1566264403825631, 0.10562726253282687, 0.06137138296711725, 0.1676501875517515, 0.18787701625625103, 0.15993607561523004, 0.1328800456540064, 0.14176197044869546, 0.17836221164509897, 0.1996815851051161, 0.10797301870320229, 0.11554073954001322]
+RMSE: [0.4122159360974816, 0.40935433119490683, 0.35658463793312073, 0.3957605846753351, 0.3250034808010937, 0.24773248266450093, 0.40945108077980635, 0.43344782414524935, 0.3999200865363355, 0.3645271535208405, 0.37651290874111537, 0.422329506008163, 0.44685745501794655, 0.3285924812030888, 0.33991284109314435]
+R2: [0.7992900238957867, 0.7557195390125457, 0.8291790246263597, 0.7837365839830022, 0.8410703900845484, 0.9110983243625467, 0.7716724513745822, 0.7530982657785655, 0.7970934405709955, 0.805354387133418, 0.8240848423548288, 0.7761252398101667, 0.6872031071283817, 0.8519051250395704, 0.8373523928340185]
+    RepeatFold       MAE       MSE      RMSE        R2
+0            1  0.278548  0.169922  0.412216  0.799290
+1            2  0.273663  0.167571  0.409354  0.755720
+2            3  0.254173  0.127153  0.356585  0.829179
+3            4  0.283946  0.156626  0.395761  0.783737
+4            5  0.214756  0.105627  0.325003  0.841070
+5            6  0.192247  0.061371  0.247732  0.911098
+6            7  0.272165  0.167650  0.409451  0.771672
+7            8  0.296409  0.187877  0.433448  0.753098
+8            9  0.280691  0.159936  0.399920  0.797093
+9           10  0.259890  0.132880  0.364527  0.805354
+10          11  0.265206  0.141762  0.376513  0.824085
+11          12  0.283208  0.178362  0.422330  0.776125
+12          13  0.311055  0.199682  0.446857  0.687203
+13          14  0.214499  0.107973  0.328592  0.851905
+14          15  0.248791  0.115541  0.339913  0.837352
+
+Repeated 5-Fold CV Results (15 runs):
+       RepeatFold        MAE        MSE       RMSE         R2
+count   15.000000  15.000000  15.000000  15.000000  15.000000
+mean     8.000000   0.261950   0.145329   0.377880   0.801599
+std      4.472136   0.032720   0.037033   0.052121   0.052147
+min      1.000000   0.192247   0.061371   0.247732   0.687203
+25%      4.500000   0.251482   0.121347   0.348249   0.773899
+50%      8.000000   0.272165   0.156626   0.395761   0.799290
+75%     11.500000   0.281950   0.168786   0.410834   0.833266
+max     15.000000   0.311055   0.199682   0.446857   0.911098
+
+Best alpha chosen by ElasticNetCV: 0.023018
+Best l1_ratio chosen by ElasticNetCV: 0.92
+
+Computing MSE vs l1_ratio...
+
+Test set performance:
+- MAE:  0.23 L
+- MSE:  0.09 L²
+- RMSE: 0.30 L
+- R²:   0.897
+
+Training set performance:
+- MAE:  0.24 L
+- MSE:  0.12 L²
+- RMSE: 0.35 L
+- R²:   0.834
+
+Model coefficients (sorted by |coef|):
+                                                Feature  Coefficient
+2632                              Baseline FVC Volume L     0.657295
+1325           original_shape_MinorAxisLength_left_lung     0.086999
+1883               wavelet-HLH_ngtdm_Busyness_left_lung     0.048424
+1150   log-sigma-4-0-mm-3D_glcm_ClusterShade_right_lung     0.042243
+2161  wavelet-LLL_gldm_SmallDependenceLowGrayLevelEm...    -0.040469
+...                                                 ...          ...
+886     log-sigma-1-0-mm-3D_glcm_JointEnergy_right_lung     0.000000
+887    log-sigma-1-0-mm-3D_glcm_JointEntropy_right_lung    -0.000000
+888             log-sigma-1-0-mm-3D_glcm_MCC_right_lung     0.000000
+889   log-sigma-1-0-mm-3D_glcm_MaximumProbability_ri...     0.000000
+879             log-sigma-1-0-mm-3D_glcm_Idm_right_lung     0.000000
+
+[2657 rows x 2 columns]
+
+Selected features (non-zero): ['Baseline FVC Volume L', 'original_shape_MinorAxisLength_left_lung', 'wavelet-HLH_ngtdm_Busyness_left_lung', 'log-sigma-4-0-mm-3D_glcm_ClusterShade_right_lung', 'wavelet-LLL_gldm_SmallDependenceLowGrayLevelEmphasis_left_lung', 'wavelet-HHL_ngtdm_Busyness_left_lung', 'wavelet-HLH_firstorder_Mean_left_lung', 'log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung', 'wavelet-LLL_ngtdm_Contrast_left_lung', 'log-sigma-2-0-mm-3D_gldm_SmallDependenceLowGrayLevelEmphasis_right_lung', 'log-sigma-2-0-mm-3D_glcm_Autocorrelation_right_lung', 'wavelet-HLL_glcm_ClusterShade_left_lung', 'wavelet-LHL_glszm_LargeAreaLowGrayLevelEmphasis_left_lung', 'wavelet-HHH_firstorder_Mean_left_lung', 'wavelet-LHH_ngtdm_Busyness_left_lung', 'wavelet-HHH_firstorder_Mean_right_lung', 'wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_left_lung', 'original_firstorder_Maximum_left_lung', 'FEV1 Volume L', 'Age', 'log-sigma-5-0-mm-3D_ngtdm_Strength_right_lung', 'log-sigma-2-0-mm-3D_glszm_SmallAreaLowGrayLevelEmphasis_right_lung', 'wavelet-LHL_gldm_DependenceEntropy_left_lung', 'wavelet-HLH_glszm_LargeAreaLowGrayLevelEmphasis_right_lung', 'log-sigma-1-0-mm-3D_firstorder_Skewness_left_lung']
+
+Selected features (non-zero): 25
+
+Top 5 patients with largest errors:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+89           2.18        3.37  ...                0.0               54.0
+73           1.90        0.97  ...                0.0               54.0
+132          2.31        1.60  ...                0.0               48.0
+81           3.59        3.88  ...                0.0               52.0
+422          2.91        3.41  ...                0.0               48.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+78           1.58        1.69  ...                0.0               52.0
+140          2.79        2.90  ...                0.0               51.0
+440          1.98        2.06  ...                0.0               53.0
+412          2.09        2.24  ...                0.0               55.0
+438          1.69        1.90  ...                0.0               48.0
+
+[5 rows x 6 columns]
+
+
+
+-  Elastic net with EN_With_All_Clinical_Radiomics_without_harmonization2ROI with new yaml
+
+number of features given as input: 2657
+
+Repeated 5-Fold CV Results (15 runs):
+       RepeatFold        MAE        MSE       RMSE         R2
+count   15.000000  15.000000  15.000000  15.000000  15.000000
+mean     8.000000   0.253610   0.134717   0.361465   0.817291
+std      4.472136   0.034848   0.049244   0.065955   0.065616
+min      1.000000   0.202881   0.067775   0.260336   0.700504
+25%      4.500000   0.230343   0.097988   0.313023   0.762934
+50%      8.000000   0.249962   0.118137   0.343710   0.826902
+75%     11.500000   0.272513   0.162170   0.402634   0.871074
+max     15.000000   0.328353   0.236489   0.486301   0.924655
+
+Best alpha chosen by ElasticNetCV: 0.024920
+Best l1_ratio chosen by ElasticNetCV: 1.00
+
+Test set performance:
+- MAE:  0.25 L
+- MSE:  0.13 L²
+- RMSE: 0.36 L
+- R²:   0.839
+
+Training set performance:
+- MAE:  0.24 L
+- MSE:  0.11 L²
+- RMSE: 0.34 L
+- R²:   0.848
+
+Model coefficients (sorted by |coef|):
+                                                Feature  Coefficient
+0                                 Baseline FVC Volume L     0.674465
+2509  log-sigma-4-0-mm-3D_glszm_GrayLevelVariance_le...    -0.043793
+1                                         FEV1 Volume L     0.041676
+1314      log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung     0.041528
+1567  wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_...     0.037135
+...                                                 ...          ...
+886            log-sigma-1-0-mm-3D_glcm_Imc2_right_lung     0.000000
+887   log-sigma-1-0-mm-3D_glcm_InverseVariance_right...    -0.000000
+888    log-sigma-1-0-mm-3D_glcm_JointAverage_right_lung    -0.000000
+889     log-sigma-1-0-mm-3D_glcm_JointEnergy_right_lung     0.000000
+879   log-sigma-1-0-mm-3D_glcm_DifferenceEntropy_rig...    -0.000000
+
+[2657 rows x 2 columns]
+
+Selected features (non-zero): ['Baseline FVC Volume L', 'log-sigma-4-0-mm-3D_glszm_GrayLevelVariance_left_lung', 'FEV1 Volume L', 'log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung', 'wavelet-LHL_glrlm_LongRunLowGrayLevelEmphasis_left_lung', 'wavelet-HHL_glszm_LargeAreaLowGrayLevelEmphasis_left_lung', 'log-sigma-5-0-mm-3D_firstorder_Skewness_right_lung', 'original_glrlm_LongRunHighGrayLevelEmphasis_left_lung', 'original_shape_MinorAxisLength_left_lung', 'log-sigma-2-0-mm-3D_glszm_SmallAreaHighGrayLevelEmphasis_right_lung', 'log-sigma-5-0-mm-3D_ngtdm_Strength_left_lung', 'log-sigma-2-0-mm-3D_glszm_SmallAreaHighGrayLevelEmphasis_left_lung', 'original_gldm_LargeDependenceHighGrayLevelEmphasis_right_lung', 'log-sigma-3-0-mm-3D_glszm_SmallAreaHighGrayLevelEmphasis_right_lung', 'original_glszm_LargeAreaHighGrayLevelEmphasis_left_lung', 'log-sigma-5-0-mm-3D_glrlm_RunEntropy_right_lung', 'log-sigma-5-0-mm-3D_glcm_Imc1_right_lung', 'Age']
+
+Selected features (non-zero): 18
+
+Top 5 patients with largest errors:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+6            2.50        3.94  ...                0.0               48.0
+104          2.09        3.39  ...                0.0               50.0
+82           2.18        3.37  ...                0.0               54.0
+482          3.04        4.15  ...                0.0               54.0
+131          2.81        1.40  ...                0.0               54.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+324          1.56        1.57  ...                0.0               52.0
+422          1.28        1.32  ...                0.0               51.0
+521          1.84        1.92  ...                0.0               48.0
+30           1.88        1.95  ...                0.0               52.0
+210          1.81        1.92  ...                0.0               48.0
+
+[5 rows x 6 columns]
+
+
+
+- Elastic net with EN_With_All_Clinical_Radiomics_without_harmonization2ROI_Covid with New Yaml
+
+number of features given as input: 2657
+
+Repeated 5-Fold CV Results (15 runs):
+       RepeatFold        MAE        MSE       RMSE         R2
+count   15.000000  15.000000  15.000000  15.000000  15.000000
+mean     8.000000   0.247385   0.129150   0.357333   0.834983
+std      4.472136   0.024025   0.029872   0.039603   0.035052
+min      1.000000   0.199128   0.095521   0.309064   0.748363
+25%      4.500000   0.235796   0.111535   0.333968   0.819797
+50%      8.000000   0.245162   0.114677   0.338640   0.839789
+75%     11.500000   0.258112   0.140037   0.374209   0.859282
+max     15.000000   0.293691   0.197037   0.443888   0.879483
+
+Best alpha chosen by ElasticNetCV: 0.032903
+Best l1_ratio chosen by ElasticNetCV: 0.80
+
+Test set performance:
+- MAE:  0.28 L
+- MSE:  0.16 L²
+- RMSE: 0.40 L
+- R²:   0.740
+
+Training set performance:
+- MAE:  0.23 L
+- MSE:  0.11 L²
+- RMSE: 0.33 L
+- R²:   0.860
+
+Model coefficients (sorted by |coef|):
+                                                Feature  Coefficient
+0                                 Baseline FVC Volume L     0.633400
+1                                         FEV1 Volume L     0.081454
+2509  log-sigma-4-0-mm-3D_glszm_GrayLevelVariance_le...    -0.050103
+1955  wavelet-HHL_glszm_LargeAreaLowGrayLevelEmphasi...     0.033822
+1328           original_shape_MinorAxisLength_left_lung     0.031832
+...                                                 ...          ...
+888    log-sigma-1-0-mm-3D_glcm_JointAverage_right_lung    -0.000000
+889     log-sigma-1-0-mm-3D_glcm_JointEnergy_right_lung     0.000000
+890    log-sigma-1-0-mm-3D_glcm_JointEntropy_right_lung    -0.000000
+891             log-sigma-1-0-mm-3D_glcm_MCC_right_lung     0.000000
+881              log-sigma-1-0-mm-3D_glcm_Id_right_lung     0.000000
+
+[2657 rows x 2 columns]
+
+Selected features (non-zero): ['Baseline FVC Volume L', 'FEV1 Volume L', 'log-sigma-4-0-mm-3D_glszm_GrayLevelVariance_left_lung', 'wavelet-HHL_glszm_LargeAreaLowGrayLevelEmphasis_left_lung', 'original_shape_MinorAxisLength_left_lung', 'wavelet-HLH_firstorder_Kurtosis_right_lung', 'log-sigma-2-0-mm-3D_glszm_SmallAreaHighGrayLevelEmphasis_right_lung', 'log-sigma-5-0-mm-3D_ngtdm_Busyness_right_lung', 'log-sigma-5-0-mm-3D_ngtdm_Strength_left_lung', 'wavelet-LLL_glszm_LargeAreaHighGrayLevelEmphasis_right_lung', 'wavelet-HHL_gldm_GrayLevelNonUniformity_left_lung', 'wavelet-HLL_gldm_SmallDependenceLowGrayLevelEmphasis_left_lung', 'log-sigma-3-0-mm-3D_glcm_Imc1_right_lung', 'log-sigma-5-0-mm-3D_firstorder_Skewness_right_lung', 'original_firstorder_90Percentile_right_lung', 'log-sigma-1-0-mm-3D_glcm_MCC_left_lung', 'original_glrlm_LongRunHighGrayLevelEmphasis_right_lung']
+
+Selected features (non-zero): 17
+
+Top 5 patients with largest errors:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+509          3.32        1.51  ...                0.0               49.0
+55           1.86        3.60  ...                0.0               50.0
+346          2.50        3.94  ...                0.0               48.0
+369          3.63        2.51  ...                0.0               53.0
+109          2.26        3.18  ...                0.0               56.0
+
+[5 rows x 6 columns]
+
+Top 5 patients with increasing FVC and lowest error:
+     Baseline_FVC  Target_FVC  ...  Baseline_FVC_Week  Followup_FVC_Week
+131          3.04        3.11  ...                0.0               51.0
+6            1.43        1.48  ...                0.0               55.0
+63           1.31        1.35  ...                0.0               54.0
+86           2.99        3.01  ...                0.0               55.0
+204          1.80        1.90  ...                0.0               49.0
+
+[5 rows x 6 columns]
+

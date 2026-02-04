@@ -1,0 +1,593 @@
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (457589) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.imageoperations: Computing Wavelet LHL
+I: (1000879) radiomics.imageoperations: Computing Wavelet LHL
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (422697) radiomics.imageoperations: Applying resampling from spacing [0.43489599 0.43489599 1.        ] and size [604 768 768] to spacing [1. 1. 1.] and size [254, 232, 638]
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000611) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (1000611) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (1000611) radiomics.featureextractor: Calculating features with label: 1
+I: (1000611) radiomics.featureextractor: Calculating features with label: 1
+I: (1000611) radiomics.featureextractor: Loading image and mask
+I: (1000611) radiomics.featureextractor: Loading image and mask
+I: (457589) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1001000) radiomics.featureextractor: Computing shape
+I: (1001000) radiomics.featureextractor: Computing shape
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.imageoperations: Computing Wavelet LHH
+I: (1000879) radiomics.imageoperations: Computing Wavelet LHH
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-LHH image
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-LHH image
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000858) radiomics.featureextractor: Computing shape
+I: (1000858) radiomics.featureextractor: Computing shape
+I: (457589) radiomics.imageoperations: Computing Wavelet HLH
+I: (457589) radiomics.featureextractor: Calculating features for wavelet-HLH image
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (1000611) radiomics.imageoperations: Applying resampling from spacing [0.63476562 0.63476562 1.        ] and size [304 512 512] to spacing [1. 1. 1.] and size [168, 214, 373]
+I: (1000611) radiomics.imageoperations: Applying resampling from spacing [0.63476562 0.63476562 1.        ] and size [304 512 512] to spacing [1. 1. 1.] and size [168, 214, 373]
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (457589) radiomics.featureextractor: Computing firstorder
+I: (1001175) radiomics.imageoperations: Applying resampling from spacing [0.74699998 0.74699998 0.5       ] and size [1201  512  512] to spacing [1. 1. 1.] and size [547, 193, 198]
+I: (1000684) radiomics.imageoperations: Applying resampling from spacing [0.66000003 0.66000003 0.5       ] and size [824 512 512] to spacing [1. 1. 1.] and size [424, 224, 198]
+I: (1000620) radiomics.featureextractor: Computing shape
+I: (1000620) radiomics.featureextractor: Computing shape
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.imageoperations: Computing Wavelet HLL
+I: (1000879) radiomics.imageoperations: Computing Wavelet HLL
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HLL image
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HLL image
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1001052) radiomics.imageoperations: Computing Wavelet LLH
+I: (1001052) radiomics.imageoperations: Computing Wavelet LLH
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (457589) radiomics.featureextractor: Computing glcm
+I: (422697) radiomics.featureextractor: Computing shape
+I: (1000611) radiomics.featureextractor: Computing shape
+I: (1000611) radiomics.featureextractor: Computing shape
+I: (1001052) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1001052) radiomics.featureextractor: Computing glrlm
+I: (1001052) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.imageoperations: Computing Wavelet HLH
+I: (1000879) radiomics.imageoperations: Computing Wavelet HLH
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HLH image
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HLH image
+I: (1001175) radiomics.featureextractor: Computing shape
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+W: (457589) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (457589) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000684) radiomics.featureextractor: Computing shape
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (172114) radiomics.imageoperations: Applying resampling from spacing [0.72460938 0.72460938 0.80000001] and size [947 512 512] to spacing [1. 1. 1.] and size [540, 217, 312]
+I: (172114) radiomics.imageoperations: Applying resampling from spacing [0.72460938 0.72460938 0.80000001] and size [947 512 512] to spacing [1. 1. 1.] and size [540, 217, 312]
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.imageoperations: Computing Wavelet HHL
+I: (1000879) radiomics.imageoperations: Computing Wavelet HHL
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HHL image
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HHL image
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+I: (523570) radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+I: (523570) radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+I: (523570) radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+I: (523570) radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+I: (523570) radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+I: (523570) radiomics.featureextractor: Calculating features for original image
+I: (523570) radiomics.featureextractor: Calculating features for original image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (1001052) radiomics.featureextractor: Computing glszm
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (1000934) radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+I: (1000934) radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+I: (1000934) radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+I: (1000934) radiomics.featureextractor: Calculating features for original image
+I: (1000934) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1000934) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+W: (1000934) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000934) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (557723) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (557723) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (557723) radiomics.featureextractor: Calculating features with label: 1
+I: (557723) radiomics.featureextractor: Calculating features with label: 1
+I: (557723) radiomics.featureextractor: Loading image and mask
+I: (557723) radiomics.featureextractor: Loading image and mask
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1001052) radiomics.imageoperations: Computing Wavelet LHL
+I: (1001052) radiomics.imageoperations: Computing Wavelet LHL
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (1000934) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.imageoperations: Computing Wavelet LLH
+I: (523570) radiomics.imageoperations: Computing Wavelet LLH
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1001052) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.featureextractor: Computing glcm
+I: (1000934) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.imageoperations: Computing Wavelet HHH
+I: (1000879) radiomics.imageoperations: Computing Wavelet HHH
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HHH image
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-HHH image
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000934) radiomics.featureextractor: Computing ngtdm
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1001052) radiomics.featureextractor: Computing glrlm
+I: (1001052) radiomics.featureextractor: Computing glrlm
+I: (904902) radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+I: (904902) radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+I: (904902) radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+I: (904902) radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+I: (904902) radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+I: (904902) radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+I: (904902) radiomics.featureextractor: Calculating features for original image
+I: (904902) radiomics.featureextractor: Calculating features for original image
+I: (904902) radiomics.featureextractor: Computing firstorder
+I: (904902) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (1000934) radiomics.imageoperations: Computing Wavelet LLH
+I: (1000934) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (1000934) radiomics.featureextractor: Computing firstorder
+I: (557723) radiomics.imageoperations: Applying resampling from spacing [0.80273438 0.80273438 1.5       ] and size [435 512 512] to spacing [1. 1. 1.] and size [292, 253, 601]
+I: (557723) radiomics.imageoperations: Applying resampling from spacing [0.80273438 0.80273438 1.5       ] and size [435 512 512] to spacing [1. 1. 1.] and size [292, 253, 601]
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (904902) radiomics.featureextractor: Computing glcm
+I: (904902) radiomics.featureextractor: Computing glcm
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000934) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+W: (1000934) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000934) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.imageoperations: Computing Wavelet LHL
+I: (523570) radiomics.imageoperations: Computing Wavelet LHL
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+W: (904902) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (904902) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (904902) radiomics.featureextractor: Computing glrlm
+I: (904902) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (457589) radiomics.featureextractor: Computing glszm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (522108) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (522108) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (522108) radiomics.featureextractor: Calculating features with label: 1
+I: (522108) radiomics.featureextractor: Calculating features with label: 1
+I: (522108) radiomics.featureextractor: Loading image and mask
+I: (522108) radiomics.featureextractor: Loading image and mask
+I: (1000934) radiomics.featureextractor: Computing glszm
+I: (1000934) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (1000934) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (1000934) radiomics.imageoperations: Computing Wavelet LHL
+I: (1000934) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (1000934) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.imageoperations: Computing Wavelet LHH
+I: (523570) radiomics.imageoperations: Computing Wavelet LHH
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-LHH image
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-LHH image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (457589) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000934) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000934) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (1000934) radiomics.featureextractor: Computing glrlm
+I: (481464) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (481464) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (481464) radiomics.featureextractor: Calculating features with label: 1
+I: (481464) radiomics.featureextractor: Calculating features with label: 1
+I: (481464) radiomics.featureextractor: Loading image and mask
+I: (481464) radiomics.featureextractor: Loading image and mask
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (557723) radiomics.featureextractor: Computing shape
+I: (557723) radiomics.featureextractor: Computing shape
+I: (522108) radiomics.imageoperations: Applying resampling from spacing [0.70703125 0.70703125 1.        ] and size [394 512 512] to spacing [1. 1. 1.] and size [276, 246, 450]
+I: (522108) radiomics.imageoperations: Applying resampling from spacing [0.70703125 0.70703125 1.        ] and size [394 512 512] to spacing [1. 1. 1.] and size [276, 246, 450]
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (457589) radiomics.featureextractor: Computing ngtdm
+I: (1001052) radiomics.imageoperations: Computing Wavelet LHH
+I: (1001052) radiomics.imageoperations: Computing Wavelet LHH
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-LHH image
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-LHH image
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (904902) radiomics.featureextractor: Computing glszm
+I: (904902) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (1000934) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (1000934) radiomics.featureextractor: Computing gldm
+I: (904902) radiomics.featureextractor: Computing gldm
+I: (904902) radiomics.featureextractor: Computing gldm
+I: (172114) radiomics.featureextractor: Computing shape
+I: (172114) radiomics.featureextractor: Computing shape
+I: (523570) radiomics.imageoperations: Computing Wavelet HLL
+I: (523570) radiomics.imageoperations: Computing Wavelet HLL
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HLL image
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HLL image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-LLL image
+I: (1000879) radiomics.featureextractor: Calculating features for wavelet-LLL image
+I: (1000934) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (904902) radiomics.featureextractor: Computing ngtdm
+I: (904902) radiomics.featureextractor: Computing ngtdm
+I: (1000934) radiomics.imageoperations: Computing Wavelet LHH
+I: (1000934) radiomics.featureextractor: Calculating features for wavelet-LHH image
+I: (1000934) radiomics.featureextractor: Computing firstorder
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1001052) radiomics.featureextractor: Computing glrlm
+I: (1001052) radiomics.featureextractor: Computing glrlm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (457589) radiomics.imageoperations: Computing Wavelet HHL
+I: (457589) radiomics.featureextractor: Calculating features for wavelet-HHL image
+I: (457589) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000934) radiomics.featureextractor: Computing glcm
+W: (1000934) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000934) radiomics.featureextractor: Computing glrlm
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (522108) radiomics.featureextractor: Computing shape
+I: (522108) radiomics.featureextractor: Computing shape
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (904902) radiomics.imageoperations: Computing Wavelet LLH
+I: (904902) radiomics.imageoperations: Computing Wavelet LLH
+I: (904902) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (904902) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (904902) radiomics.featureextractor: Computing firstorder
+I: (904902) radiomics.featureextractor: Computing firstorder
+I: (481464) radiomics.imageoperations: Applying resampling from spacing [0.87304688 0.87304688 1.        ] and size [631 512 512] to spacing [1. 1. 1.] and size [418, 219, 347]
+I: (481464) radiomics.imageoperations: Applying resampling from spacing [0.87304688 0.87304688 1.        ] and size [631 512 512] to spacing [1. 1. 1.] and size [418, 219, 347]
+I: (523570) radiomics.imageoperations: Computing Wavelet HLH
+I: (523570) radiomics.imageoperations: Computing Wavelet HLH
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HLH image
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HLH image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (1000934) radiomics.featureextractor: Computing glszm
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (1000934) radiomics.featureextractor: Computing gldm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (904902) radiomics.featureextractor: Computing glcm
+I: (904902) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1000934) radiomics.featureextractor: Computing ngtdm
+W: (904902) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (904902) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (904902) radiomics.featureextractor: Computing glrlm
+I: (904902) radiomics.featureextractor: Computing glrlm
+I: (395857) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (395857) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (395857) radiomics.featureextractor: Calculating features with label: 1
+I: (395857) radiomics.featureextractor: Calculating features with label: 1
+I: (395857) radiomics.featureextractor: Loading image and mask
+I: (395857) radiomics.featureextractor: Loading image and mask
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (1001052) radiomics.featureextractor: Computing ngtdm
+I: (1000928) radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+I: (1000928) radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+I: (1000928) radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+I: (1000928) radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+I: (1000928) radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+I: (1000928) radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+I: (1000928) radiomics.featureextractor: Calculating features for original image
+I: (1000928) radiomics.featureextractor: Calculating features for original image
+I: (1000934) radiomics.imageoperations: Computing Wavelet HLL
+I: (1000934) radiomics.featureextractor: Calculating features for wavelet-HLL image
+I: (1000928) radiomics.featureextractor: Computing firstorder
+I: (1000928) radiomics.featureextractor: Computing firstorder
+I: (1000934) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (457589) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.imageoperations: Computing Wavelet HLL
+I: (1001052) radiomics.imageoperations: Computing Wavelet HLL
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-HLL image
+I: (1001052) radiomics.featureextractor: Calculating features for wavelet-HLL image
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (1001052) radiomics.featureextractor: Computing firstorder
+I: (1000928) radiomics.featureextractor: Computing glcm
+I: (1000928) radiomics.featureextractor: Computing glcm
+I: (884561) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (884561) radiomics.featureextractor: Loading parameter file /home/pansurya/OSIC_thesis/radiomics_files/Pyradiomics_Params.yaml
+I: (884561) radiomics.featureextractor: Calculating features with label: 1
+I: (884561) radiomics.featureextractor: Calculating features with label: 1
+I: (884561) radiomics.featureextractor: Loading image and mask
+I: (884561) radiomics.featureextractor: Loading image and mask
+I: (1000934) radiomics.featureextractor: Computing glcm
+W: (1000928) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000928) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000928) radiomics.featureextractor: Computing glrlm
+I: (1000928) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+W: (1000934) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000934) radiomics.featureextractor: Computing glrlm
+I: (884561) radiomics.imageoperations: Applying resampling from spacing [0.70200002 0.70200002 5.        ] and size [ 69 512 512] to spacing [1. 1. 1.] and size [49, 215, 1922]
+I: (884561) radiomics.imageoperations: Applying resampling from spacing [0.70200002 0.70200002 5.        ] and size [ 69 512 512] to spacing [1. 1. 1.] and size [49, 215, 1922]
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.imageoperations: Computing Wavelet HHL
+I: (523570) radiomics.imageoperations: Computing Wavelet HHL
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HHL image
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HHL image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (1000879) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.featureextractor: Computing glcm
+I: (1001052) radiomics.featureextractor: Computing glcm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+W: (457589) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (457589) radiomics.featureextractor: Computing glrlm
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1001052) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1001052) radiomics.featureextractor: Computing glrlm
+I: (1001052) radiomics.featureextractor: Computing glrlm
+I: (481464) radiomics.featureextractor: Computing shape
+I: (481464) radiomics.featureextractor: Computing shape
+I: (1000934) radiomics.featureextractor: Computing glszm
+I: (904902) radiomics.featureextractor: Computing glszm
+I: (904902) radiomics.featureextractor: Computing glszm
+I: (1000928) radiomics.featureextractor: Computing glszm
+I: (1000928) radiomics.featureextractor: Computing glszm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.featureextractor: Computing ngtdm
+I: (1000928) radiomics.featureextractor: Computing gldm
+I: (1000928) radiomics.featureextractor: Computing gldm
+I: (884561) radiomics.featureextractor: Computing shape
+I: (884561) radiomics.featureextractor: Computing shape
+I: (1000934) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (1000928) radiomics.featureextractor: Computing ngtdm
+I: (1000928) radiomics.featureextractor: Computing ngtdm
+I: (1000879) radiomics.imageoperations: Computing LoG with sigma 1
+I: (1000879) radiomics.imageoperations: Computing LoG with sigma 1
+I: (1000934) radiomics.featureextractor: Computing ngtdm
+I: (904902) radiomics.featureextractor: Computing gldm
+I: (904902) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (1000934) radiomics.imageoperations: Computing Wavelet HLH
+I: (1000934) radiomics.featureextractor: Calculating features for wavelet-HLH image
+I: (1000934) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.featureextractor: Computing ngtdm
+I: (904902) radiomics.featureextractor: Computing ngtdm
+I: (904902) radiomics.featureextractor: Computing ngtdm
+I: (523570) radiomics.imageoperations: Computing Wavelet HHH
+I: (523570) radiomics.imageoperations: Computing Wavelet HHH
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HHH image
+I: (523570) radiomics.featureextractor: Calculating features for wavelet-HHH image
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing firstorder
+I: (1000928) radiomics.imageoperations: Computing Wavelet LLH
+I: (1000928) radiomics.imageoperations: Computing Wavelet LLH
+I: (1000928) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (1000928) radiomics.featureextractor: Calculating features for wavelet-LLH image
+I: (1000928) radiomics.featureextractor: Computing firstorder
+I: (1000928) radiomics.featureextractor: Computing firstorder
+I: (395857) radiomics.imageoperations: Applying resampling from spacing [0.7109375 0.7109375 1.       ] and size [557 512 512] to spacing [1. 1. 1.] and size [387, 202, 430]
+I: (395857) radiomics.imageoperations: Applying resampling from spacing [0.7109375 0.7109375 1.       ] and size [557 512 512] to spacing [1. 1. 1.] and size [387, 202, 430]
+I: (1000879) radiomics.featureextractor: Calculating features for log-sigma-1-0-mm-3D image
+I: (1000879) radiomics.featureextractor: Calculating features for log-sigma-1-0-mm-3D image
+I: (1000934) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (1000879) radiomics.featureextractor: Computing firstorder
+I: (904902) radiomics.imageoperations: Computing Wavelet LHL
+I: (904902) radiomics.imageoperations: Computing Wavelet LHL
+I: (904902) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (904902) radiomics.featureextractor: Calculating features for wavelet-LHL image
+I: (904902) radiomics.featureextractor: Computing firstorder
+I: (904902) radiomics.featureextractor: Computing firstorder
+I: (523570) radiomics.featureextractor: Computing glcm
+I: (523570) radiomics.featureextractor: Computing glcm
+W: (1000934) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000934) radiomics.featureextractor: Computing glrlm
+I: (1000928) radiomics.featureextractor: Computing glcm
+I: (1000928) radiomics.featureextractor: Computing glcm
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (523570) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glrlm
+I: (1001052) radiomics.featureextractor: Computing glszm
+I: (1001052) radiomics.featureextractor: Computing glszm
+W: (1000928) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000928) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000928) radiomics.featureextractor: Computing glrlm
+I: (1000928) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (1000879) radiomics.featureextractor: Computing glcm
+I: (904902) radiomics.featureextractor: Computing glcm
+I: (904902) radiomics.featureextractor: Computing glcm
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (1000879) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (1000879) radiomics.featureextractor: Computing glrlm
+I: (1000879) radiomics.featureextractor: Computing glrlm
+W: (904902) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+W: (904902) radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+I: (904902) radiomics.featureextractor: Computing glrlm
+I: (904902) radiomics.featureextractor: Computing glrlm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (523570) radiomics.featureextractor: Computing glszm
+I: (1000934) radiomics.featureextractor: Computing glszm
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (1001052) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm
+I: (523570) radiomics.featureextractor: Computing gldm

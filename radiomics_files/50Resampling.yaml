@@ -1,0 +1,67 @@
+# imageType:
+#   Original: {}
+#   Wavelet: {}
+#   LoG:
+#     sigma: [1.0, 2.0, 3.0, 4.0, 5.0]
+#   Square: {}  # Added Square filter to boost fibrotic tissue signal
+
+# featureClass:
+#   firstorder: []
+#   shape: []
+#   glcm: []
+#   glrlm: []
+#   glszm: []
+#   gldm: []
+#   ngtdm: []
+
+# setting:
+#   # Resampling
+#   resampledPixelSpacing: [1, 1, 1]
+#   interpolator: 'sitkBSpline'
+#   padDistance: 10
+
+#   # Intensity discretization
+#   binWidth: 25
+
+#   # Resegmentation (widening slightly to capture dense fibrosis)
+#   resegmentRange: [-1000, 600] 
+
+#   # Mask handling
+#   label: 1
+#   correctMask: true
+
+#   # Recommended additions
+#   normalize: true
+#   normalizeScale: 100
+#   voxelArrayShift: 1000
+#   minimumROIDimensions: 2
+#   minimumROISize: 100
+#   removeOutliers: 3 
+
+
+setting:
+  resampledPixelSpacing: [1, 1, 1]
+  interpolator: 'sitkBSpline'
+  binWidth: 25
+  correctMask: true
+  padDistance: 10
+  label: 1
+  # ------------------------- # NORMALIZATION SETTINGS # ------------------------- 
+  normalize: true # Enable z-score normalization 
+  normalizeScale: 1 # Keep normalized intensities as-is 
+  normalizeKernel: 3
+
+featureClass:
+  firstorder: [Mean, Median, Variance, Skewness, Kurtosis]
+  shape: [VoxelVolume, SurfaceArea, Sphericity]
+  glcm: [Contrast, Correlation, JointEnergy, Homogeneity1]
+  glrlm: [ShortRunEmphasis, LongRunEmphasis]
+  glszm: [ZoneVariance, ZoneEntropy]
+  gldm: [DependenceEntropy, DependenceVariance]
+  ngtdm: [Coarseness, Contrast, Busyness]
+
+imageType:
+  Original: {}
+  Wavelet: {}
+  LoG:
+    sigma: [1.0, 3.0, 5.0]
