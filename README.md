@@ -40,35 +40,28 @@ Each folder represents one major step of the pipeline, from Patients cohort sele
 ### Folder descriptions
 
 - **`Patients_Data_Exploration/`**  
-  Contains notebooks/scripts for selecting the patient cohort from the OSIC dataset that is relevant to the thesis objective.
+  Contains scripts for selecting the patient cohort from the OSIC dataset that is relevant to the thesis objective.
 
-- **`Segmentation/`** *(if you have this folder)*  
-  Code for automated lung segmentation (mask generation) used before radiomics extraction.  
-  **Output:** segmentation masks saved in `data/processed/masks/`.
-
-- **`Exploratory_Data_Analysis/`**  
-  Notebooks for exploring clinical variables, checking missing values, distributions, and correlations.  
-  **Output:** EDA plots saved in `results/figures/`.
+- **`Image_Preprocessing&Segmentation/`** 
+  Code for Image preprocessing and automated lung segmentation (mask generation) used before radiomics extraction.  
 
 - **`Radiomics_Extraction/`**  
-  Scripts/notebooks to extract radiomic features from segmented HRCT scans (e.g., using PyRadiomics).  
-  **Output:** radiomics feature table saved as `data/processed/radiomics_features.csv`.
+  Script to extract radiomic features from segmented HRCT scans (e.g., using PyRadiomics).  
 
-- **`Feature_Selection/`** *(if you have this folder)*  
-  Implements different feature selection pipelines (six pipelines + full feature set) for the combined RC scenario.  
-  **Output:** selected feature sets saved in `data/processed/featuresets/`.
+- **`EDA&Feature_selection/`**  
+ Script for exploratory analysis of clinical variables (missing values, distributions, and correlations) and for implementing multiple feature selection pipelines (P1–P6) as well as the full feature set. 
 
 - **`Model_Training/`**  
   Training and evaluation code for regression models:
   - Elastic Net (EN)
   - Partial Least Squares (PLS)
   - Random Forest (RF)  
-  **Output:** trained models and evaluation results saved in `models/` and `results/tables/`.
 
-- **`Results/`** *(or `results/`)*  
-  Final thesis outputs:
-  - `results/figures/` → all figures used in the thesis  
-  - `results/tables/` → all tables used in the thesis
+- **`Trained_models/`**  
+  Saved trained models (EN, PLS, RF) for the three feature configurations: C (clinical), R (radiomics), and RC (radiomics + clinical), including reduced RC feature sets from feature selection pipelines P1–P6.
+
+- **`Radiomics_files/`**  
+  Contains CSV files with the extracted radiomics features computed from the segmented HRCT images. These files are used as inputs for feature selection and model training.
 
 ---
 
