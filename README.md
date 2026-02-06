@@ -11,7 +11,7 @@ The dataset is **not included in this repository** due to size restrictions.
 ## Contents
 The dataset includes:
 - **HRCT scans** (anonymized) for IPF patients
-- **Clinical metadata** collected over time (longitudinal measurements such as FVC
+- **Clinical metadata** collected over time (longitudinal measurements such as FVC)
 
 ## Pipeline Overview
 
